@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ecommerce website, single vendor, multi vendor">
+    <meta name="author" content="Algotoolz">
+    <!-- Title -->
+    <title>AlgoBazar</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon/favicon.png">
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/fonts/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Scrollup Stylesheet -->
+    <link rel="stylesheet" href="assets/vendor/scrollup-master/tab.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- ========= Preloader ========= -->
+    <my-preloader></my-preloader>
+    <!-- ========= Header ========= -->
+    <my-header></my-header>
+    <!-- ========= Navigation ========= -->
+    <section class="navigation-bar">
+        <div class="container">
+            <my-navigation></my-navigation>
+        </div>
+    </section>
+    <!-- ========= Product List ========= -->
+    <section class="product-list pt-30">
+        <div class="container">
+            <div class="row">
+                <!-- Filter -->
+                <div class="col-lg-3 order-1 order-lg-0">
+                    <!-- Filter by Category -->
+                    <div class="card product-list-filter">
+                        <h4 class="card-title text-start">Filter by Category</h4>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="cat1">
+                                        <label class="form-check-label" for="cat1">Watches &amp;
+                                            Accessories<span>(3)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="cat2">
+                                        <label class="form-check-label" for="cat2">Home &
+                                            Lifestyle<span>(3)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="cat3">
+                                        <label class="form-check-label" for="cat3">Groceries &
+                                            Pets<span>(3)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="cat4">
+                                        <label class="form-check-label" for="cat4">Babies & Toys<span>(1)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="cat5">
+                                        <label class="form-check-label" for="cat5">Health &
+                                            Beauty<span>(2)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="cat6">
+                                        <label class="form-check-label" for="cat6">TV & Home
+                                            Appliances<span>(3)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="cat7">
+                                        <label class="form-check-label" for="cat7">Electronic
+                                            Accessories<span>(3)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="cat8">
+                                        <label class="form-check-label" for="cat8">Electronic
+                                            Devices<span>(5)</span></label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Filter by Brand -->
+                    <div class="card product-list-filter">
+                        <h4 class="card-title text-start">Filter by Brand</h4>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="brand1">
+                                        <label class="form-check-label" for="brand1">Singer<span>(3)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="brand2">
+                                        <label class="form-check-label" for="brand2">Huawei<span>(3)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="brand3">
+                                        <label class="form-check-label" for="brand3">Xiaomi<span>(3)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="brand4">
+                                        <label class="form-check-label" for="brand4">Samsung<span>(1)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="brand5">
+                                        <label class="form-check-label" for="brand5">Realme<span>(2)</span></label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Select by Size -->
+                    <div class="card product-list-filter">
+                        <h4 class="card-title text-start">Select by Size</h4>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="size1">
+                                        <label class="form-check-label" for="size1">L<span>(3)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="size2">
+                                        <label class="form-check-label" for="size2">M<span>(3)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="size3">
+                                        <label class="form-check-label" for="size3">XXL<span>(3)</span></label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Select by Color -->
+                    <div class="card product-list-filter">
+                        <h4 class="card-title text-start">Select by Color</h4>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="color1">
+                                        <label class="form-check-label" for="color1">Red<span>(3)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="color2">
+                                        <label class="form-check-label" for="color2">Green<span>(3)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="color3">
+                                        <label class="form-check-label" for="color3">Blue<span>(3)</span></label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Products -->
+                <div class="col-lg-9 order-0 order-lg-1 all-products">
+                    <!-- product-filter -->
+                    <div class="d-md-flex text-center text-md-start justify-content-between product-filter">
+                        <div class="flex-fill align-self-center">
+                            <p>Showing <span class="from">1–16</span> of <span class="to">16</span> results</p>
+                        </div>
+                        <div class="align-self-center">
+                            <select class="form-select form-select-sm">
+                                <option>Sort by new item</option>
+                                <option>Sort by old item</option>
+                                <option>Sort by best selling</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- content -->
+                    <div class="row">
+                        <!-- product-single -->
+                        <div class="col-md-4">
+                            <div class="card product-single">
+                                <figure class="product-img">
+                                    <a href="product-detail.html"><img src="assets/images/products/01.jpg" class="img-fluid" alt="AlgoBazar"></a>
+                                    <span class="product-badge-red">10% sale</span>
+                                    <div class="product-overlay">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item"><a href="products.html#" title="Add to Basket"><i class="bi bi-cart-plus-fill"></i></a></li>
+                                            <li class="list-inline-item"><a href="products.html#" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                                            <li class="list-inline-item"><a href="products.html#" title="View"><i class="fas fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </figure>
+                                <div class="card-body">
+                                    <p class="product-info">Fashion Accessories</p>
+                                    <a href="product-detail.html">
+                                        <h3 class="product-name">Clear glass perfume 200ml</h3>
+                                    </a>
+                                    <div class="d-flex">
+                                        <div class="product-price"><del>$100</del>$90</div>
+                                        <div class="product-rating ms-auto"><i class="fas fa-star"></i> <span>(0)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product-single -->
+                        <div class="col-md-4">
+                            <div class="card product-single">
+                                <figure class="product-img">
+                                    <a href="product-detail.html"><img src="assets/images/products/02.jpg" class="img-fluid" alt="AlgoBazar"></a>
+                                    <span class="product-badge-brown">Stockout</span>
+                                    <div class="product-overlay">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item"><a href="products.html#" title="Add to Basket"><i class="bi bi-cart-plus-fill"></i></a></li>
+                                            <li class="list-inline-item"><a href="products.html#" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                                            <li class="list-inline-item"><a href="products.html#" title="View"><i class="fas fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </figure>
+                                <div class="card-body">
+                                    <p class="product-info">Mobile & Gadgets</p>
+                                    <a href="product-detail.html">
+                                        <h3 class="product-name">Silver iphone</h3>
+                                    </a>
+                                    <div class="d-flex">
+                                        <div class="product-price">$8000</div>
+                                        <div class="product-rating ms-auto"><i class="fas fa-star"></i> <span>(0)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product-single -->
+                        <div class="col-md-4">
+                            <div class="card product-single">
+                                <figure class="product-img">
+                                    <a href="product-detail.html"><img src="assets/images/products/03.jpg" class="img-fluid" alt="AlgoBazar"></a>
+                                    <span class="product-badge-red">10% sale</span>
+                                    <div class="product-overlay">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item"><a href="products.html#" title="Add to Basket"><i class="bi bi-cart-plus-fill"></i></a></li>
+                                            <li class="list-inline-item"><a href="products.html#" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                                            <li class="list-inline-item"><a href="products.html#" title="View"><i class="fas fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </figure>
+                                <div class="card-body">
+                                    <p class="product-info">Watches & Accessories</p>
+                                    <a href="product-detail.html">
+                                        <h3 class="product-name">Golden wristwatch</h3>
+                                    </a>
+                                    <div class="d-flex">
+                                        <div class="product-price"><del>$300</del>$200</div>
+                                        <div class="product-rating ms-auto"><i class="fas fa-star"></i> <span>(0)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product-single -->
+                        <div class="col-md-4">
+                            <div class="card product-single">
+                                <figure class="product-img">
+                                    <a href="product-detail.html"><img src="assets/images/products/10.jpg" class="img-fluid" alt="AlgoBazar"></a>
+                                    <span class="product-badge-right-red">25% off</span>
+                                    <span class="product-badge-brown">Stockout</span>
+                                    <div class="product-overlay">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item"><a href="products.html#" title="Add to Basket"><i class="bi bi-cart-plus-fill"></i></a></li>
+                                            <li class="list-inline-item"><a href="products.html#" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                                            <li class="list-inline-item"><a href="products.html#" title="View"><i class="fas fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </figure>
+                                <div class="card-body">
+                                    <p class="product-info">Fashion Accessories</p>
+                                    <a href="product-detail.html">
+                                        <h3 class="product-name">Sports Shoe</h3>
+                                    </a>
+                                    <div class="d-flex">
+                                        <div class="product-price"><del>320$</del>$150</div>
+                                        <div class="product-rating ms-auto"><i class="fas fa-star"></i> <span>(0)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product-single -->
+                        <div class="col-md-4">
+                            <div class="card product-single">
+                                <figure class="product-img">
+                                    <a href="product-detail.html"><img src="assets/images/products/06.jpg" class="img-fluid" alt="AlgoBazar"></a>
+                                    <span class="product-badge-green">New</span>
+                                    <div class="product-overlay">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item"><a href="products.html#" title="Add to Basket"><i class="bi bi-cart-plus-fill"></i></a></li>
+                                            <li class="list-inline-item"><a href="products.html#" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                                            <li class="list-inline-item"><a href="products.html#" title="View"><i class="fas fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </figure>
+                                <div class="card-body">
+                                    <p class="product-info">Fashion Accessories</p>
+                                    <a href="product-detail.html">
+                                        <h3 class="product-name">D&G perfume</h3>
+                                    </a>
+                                    <div class="d-flex">
+                                        <div class="product-price">$120</div>
+                                        <div class="product-rating ms-auto"><i class="fas fa-star"></i> <span>(0)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product-single -->
+                        <div class="col-md-4">
+                            <div class="card product-single">
+                                <figure class="product-img">
+                                    <a href="product-detail.html"><img src="assets/images/products/07.jpg" class="img-fluid" alt="AlgoBazar"></a>
+                                    <span class="product-badge-right-green">New</span>
+                                    <span class="product-badge-brown">Stockout</span>
+                                    <div class="product-overlay">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item"><a href="products.html#" title="Add to Basket"><i class="bi bi-cart-plus-fill"></i></a></li>
+                                            <li class="list-inline-item"><a href="products.html#" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                                            <li class="list-inline-item"><a href="products.html#" title="View"><i class="fas fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </figure>
+                                <div class="card-body">
+                                    <p class="product-info">Watches & Accessories</p>
+                                    <a href="product-detail.html">
+                                        <h3 class="product-name">Wrist Watch</h3>
+                                    </a>
+                                    <div class="d-flex">
+                                        <div class="product-price">$500</div>
+                                        <div class="product-rating ms-auto"><i class="fas fa-star"></i> <span>(0)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product-single -->
+                        <div class="col-md-4">
+                            <div class="card product-single">
+                                <figure class="product-img">
+                                    <a href="product-detail.html"><img src="assets/images/products/08.jpg" class="img-fluid" alt="AlgoBazar"></a>
+                                    <span class="product-badge-green">New</span>
+                                    <div class="product-overlay">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item"><a href="products.html#" title="Add to Basket"><i class="bi bi-cart-plus-fill"></i></a></li>
+                                            <li class="list-inline-item"><a href="products.html#" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                                            <li class="list-inline-item"><a href="products.html#" title="View"><i class="fas fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </figure>
+                                <div class="card-body">
+                                    <p class="product-info">Computer & Accessories</p>
+                                    <a href="product-detail.html">
+                                        <h3 class="product-name">Apple Notebook</h3>
+                                    </a>
+                                    <div class="d-flex">
+                                        <div class="product-price">$9000</div>
+                                        <div class="product-rating ms-auto"><i class="fas fa-star"></i> <span>(0)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product-single -->
+                        <div class="col-md-4">
+                            <div class="card product-single">
+                                <figure class="product-img">
+                                    <a href="product-detail.html"><img src="assets/images/products/11.jpg" class="img-fluid" alt="AlgoBazar"></a>
+                                    <span class="product-badge-red">5% off</span>
+                                    <div class="product-overlay">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item"><a href="products.html#" title="Add to Basket"><i class="bi bi-cart-plus-fill"></i></a></li>
+                                            <li class="list-inline-item"><a href="products.html#" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                                            <li class="list-inline-item"><a href="products.html#" title="View"><i class="fas fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </figure>
+                                <div class="card-body">
+                                    <p class="product-info">Food & Beverages</p>
+                                    <a href="product-detail.html">
+                                        <h3 class="product-name">Soft Drinks</h3>
+                                    </a>
+                                    <div class="d-flex">
+                                        <div class="product-price"><del>80$</del>$50</div>
+                                        <div class="product-rating ms-auto"><i class="fas fa-star"></i> <span>(0)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product-single -->
+                        <div class="col-md-4">
+                            <div class="card product-single">
+                                <figure class="product-img">
+                                    <a href="product-detail.html"><img src="assets/images/products/12.jpg" class="img-fluid" alt="AlgoBazar"></a>
+                                    <span class="product-badge-red">5% off</span>
+                                    <div class="product-overlay">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item"><a href="products.html#" title="Add to Basket"><i class="bi bi-cart-plus-fill"></i></a></li>
+                                            <li class="list-inline-item"><a href="products.html#" title="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                                            <li class="list-inline-item"><a href="products.html#" title="View"><i class="fas fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </figure>
+                                <div class="card-body">
+                                    <p class="product-info">Fashion Accessories</p>
+                                    <a href="product-detail.html">
+                                        <h3 class="product-name">Ordinary Combo</h3>
+                                    </a>
+                                    <div class="d-flex">
+                                        <div class="product-price"><del>80$</del>$70</div>
+                                        <div class="product-rating ms-auto"><i class="fas fa-star"></i> <span>(0)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ product-single -->
+                    </div>
+                    <!-- pagination -->
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="products.html#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link active" href="products.html#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="products.html#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="products.html#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="products.html#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========= Footer ========= -->
+    <my-footer></my-footer>
+    <!-- ========= Js Files ========= -->
+    <!-- Jquery -->
+    <script src="assets/js/jquery-1.12.4.js"></script>
+    <!-- Popper Js -->
+    <script src="assets/js/popper.min.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Scrollup Js -->
+    <script src="assets/vendor/scrollup-master/scrollUp.min.js"></script>
+    <!-- Custom Js -->
+    <script src="assets/js/base.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>
